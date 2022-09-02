@@ -2,9 +2,8 @@
 
 public class DigitKataToken : KataToken
 {
-    public int Value { get; set; }
-
-    public DigitKataToken() : base(TokenType.Digit)
+    public DigitKataToken(int value) : base(TokenType.Digit)
     {
+        AdditionalData = value.ToString();
     }
 }

@@ -15,41 +15,46 @@ public class WordsKataInterpreterTests
         };
         yield return new object[]
         {
-            new DigitKataToken { Value = 5 },
+            new List<KataToken>
+            {
+                new DigitKataToken(5),
+                new KataToken(TokenType.Currency, "$")
+            },
             "five dollars"
         };
         yield return new object[]
         {
             new List<KataToken>
             {
-                new DigitKataToken { Value = 1 },
+                new DigitKataToken(1),
                 new KataToken(TokenType.Separator),
-                new DigitKataToken { Value = 4 },
-                new DigitKataToken { Value = 5 },
-                new DigitKataToken { Value = 6 },
+                new DigitKataToken(4),
+                new DigitKataToken(5),
+                new DigitKataToken(6),
                 new KataToken(TokenType.Separator),
-                new DigitKataToken { Value = 4 },
-                new DigitKataToken { Value = 5 },
-                new KataToken(TokenType.Currency),
+                new DigitKataToken(4),
+                new DigitKataToken(5),
+                new KataToken(TokenType.Currency, "$"),
             },
-            "one thousand four hundred fifty six dollars and forty five cents"
+            "one thousand four hundred fifty six dollars and fourty five cents"
         };
         yield return new object[]
         {
             new List<KataToken>
             {
-                new DigitKataToken { Value = 9 },
-                new DigitKataToken { Value = 8 },
-                new DigitKataToken { Value = 7 },
-                new DigitKataToken { Value = 6 },
-                new DigitKataToken { Value = 5 },
-                new DigitKataToken { Value = 4 },
-                new DigitKataToken { Value = 3 },
-                new DigitKataToken { Value = 2 },
-                new DigitKataToken { Value = 1 },
-                new DigitKataToken { Value = 9 },
-                new DigitKataToken { Value = 8 },
-                new DigitKataToken { Value = 7 }
+                new DigitKataToken(9),
+                new DigitKataToken(8),
+                new DigitKataToken(7),
+                new DigitKataToken(6),
+                new DigitKataToken(5),
+                new DigitKataToken(4),
+                new DigitKataToken(3),
+                new DigitKataToken(2),
+                new DigitKataToken(1),
+                new DigitKataToken(9),
+                new DigitKataToken(8),
+                new DigitKataToken(7),
+                new KataToken(TokenType.Currency, "$")
             },
             "nine hundred eighty seven billion six hundred fifty four million three hundred twenty one thousand nine hundred eighty seven dollars"
         };
@@ -58,7 +63,7 @@ public class WordsKataInterpreterTests
             new List<KataToken>
             {
                 new KataToken(TokenType.Separator),
-                new DigitKataToken { Value = 5 }
+                new DigitKataToken(5)
             },
             "fifty cents"
         };
@@ -66,31 +71,31 @@ public class WordsKataInterpreterTests
         {
             new List<KataToken>
             {
-                new DigitKataToken { Value = 9 },
+                new DigitKataToken(9),
                 new KataToken(TokenType.HundredWord),
-                new DigitKataToken { Value = 8 },
+                new DigitKataToken(8),
                 new KataToken(TokenType.TenWord),
-                new DigitKataToken { Value = 7 },
+                new DigitKataToken(7),
                 new KataToken(TokenType.BillionWord),
-                new DigitKataToken { Value = 6 },
+                new DigitKataToken(6),
                 new KataToken(TokenType.HundredWord),
-                new DigitKataToken { Value = 5 },
+                new DigitKataToken(5),
                 new KataToken(TokenType.TenWord),
-                new DigitKataToken { Value = 4 },
+                new DigitKataToken(4),
                 new KataToken(TokenType.MillionWord),
-                new DigitKataToken { Value = 3 },
+                new DigitKataToken(3),
                 new KataToken(TokenType.HundredWord),
-                new DigitKataToken { Value = 2 },
+                new DigitKataToken(2),
                 new KataToken(TokenType.TenWord),
-                new DigitKataToken { Value = 1 },
+                new DigitKataToken(1),
                 new KataToken(TokenType.ThousandWord),
                 new KataToken(TokenType.Separator),
-                new DigitKataToken { Value = 9 },
+                new DigitKataToken(9),
                 new KataToken(TokenType.HundredWord),
-                new DigitKataToken { Value = 8 },
+                new DigitKataToken(8),
                 new KataToken(TokenType.TenWord),
-                new DigitKataToken { Value = 7 },
-                new KataToken(TokenType.Currency)
+                new DigitKataToken(7),
+                new KataToken(TokenType.Currency, "$")
             },
             "nine hundred eighty seven billion six hundred fifty four million three hundred twenty one thousand nine hundred eighty seven dollars"
         };
@@ -98,13 +103,13 @@ public class WordsKataInterpreterTests
         {
             new List<KataToken>
             {
-                new DigitKataToken { Value = 9 },
-                new DigitKataToken { Value = 8 },
-                new DigitKataToken { Value = 7 },
+                new DigitKataToken(9),
+                new DigitKataToken(8),
+                new DigitKataToken(7),
                 new KataToken(TokenType.Separator),
-                new DigitKataToken { Value = 5 },
-                new DigitKataToken { Value = 4 },
-                new KataToken(TokenType.Currency)
+                new DigitKataToken(5),
+                new DigitKataToken(4),
+                new KataToken(TokenType.Currency, "$")
             },
             "nine hundred eighty seven dollars and fifty four cents"
         };
@@ -112,40 +117,41 @@ public class WordsKataInterpreterTests
         {
             new List<KataToken>
             {
+                new DigitKataToken(0),
                 new KataToken(TokenType.Separator),
-                new DigitKataToken { Value = 5 },
-                new DigitKataToken { Value = 4 },
-                new KataToken(TokenType.Currency)
+                new DigitKataToken(5),
+                new DigitKataToken(4),
+                new KataToken(TokenType.Currency, "$")
             },
-            "fifty four cents"
+            "zero dollars and fifty four cents"
         };
         yield return new object[]
         {
             new List<KataToken>
             {
-                new DigitKataToken { Value = 5 },
-                new DigitKataToken { Value = 6 },
-                new DigitKataToken { Value = 1 },
+                new DigitKataToken(5),
+                new DigitKataToken(6),
+                new DigitKataToken(1),
                 new KataToken(TokenType.Separator),
-                new DigitKataToken { Value = 4 },
-                new DigitKataToken { Value = 5 },
-                new DigitKataToken { Value = 6 },
+                new DigitKataToken(4),
+                new DigitKataToken(5),
+                new DigitKataToken(6),
                 new KataToken(TokenType.Separator),
-                new DigitKataToken { Value = 4 },
-                new DigitKataToken { Value = 5 },
-                new KataToken(TokenType.Currency)
+                new DigitKataToken(4),
+                new DigitKataToken(5),
+                new KataToken(TokenType.Currency, "$")
             },
-            "five hundred sixty one thousand four hundred fifty six dollars and forty five cents"
+            "five hundred sixty one thousand four hundred fifty six dollars and fourty five cents"
         };
         yield return new object[]
         {
             new List<KataToken>
             {
-                new DigitKataToken { Value = 1 },
-                new DigitKataToken { Value = 4 },
-                new DigitKataToken { Value = 5 },
-                new DigitKataToken { Value = 7 },
-                new KataToken(TokenType.Currency)
+                new DigitKataToken(1),
+                new DigitKataToken(4),
+                new DigitKataToken(5),
+                new DigitKataToken(7),
+                new KataToken(TokenType.Currency, "$")
             },
             "one thousand four hundred fifty seven dollars"
         };

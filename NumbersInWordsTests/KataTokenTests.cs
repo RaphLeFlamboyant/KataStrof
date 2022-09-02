@@ -12,7 +12,8 @@ public class KataTokenTests
     [Test]
     public void DigitKataToken_HaveDefaultType_Digit()
     {
-        var digitToken = new DigitKataToken();
-        Assert.Equals(digitToken.Type, TokenType.Digit);
+        var digitToken = new DigitKataToken(5);
+        Assert.That(TokenType.Digit, Is.EqualTo(digitToken.Type));
+        Assert.That(digitToken.AdditionalData, Is.EqualTo("5"));
     }
 }

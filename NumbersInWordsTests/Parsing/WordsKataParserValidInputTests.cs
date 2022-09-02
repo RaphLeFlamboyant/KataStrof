@@ -10,59 +10,72 @@ public class WordsKataParserValidInputTests
     {
         yield return new List<KataToken>();
         yield return new List<KataToken> {
-            new DigitKataToken { Value = 7 },
+            new DigitKataToken(7),
             new KataToken(TokenType.HundredWord),
             new KataToken(TokenType.Separator),
-            new DigitKataToken { Value = 4 },
+            new DigitKataToken(4),
             new KataToken(TokenType.TenWord),
-            new DigitKataToken { Value = 5 },
-            new KataToken(TokenType.Currency)
+            new DigitKataToken(5),
+            new KataToken(TokenType.Currency, "$")
         };
-        // Big word
         yield return new List<KataToken> {
-            new DigitKataToken { Value = 9 },
-            new KataToken(TokenType.HundredWord),
-            new DigitKataToken { Value = 8 },
-            new KataToken(TokenType.TenWord),
-            new DigitKataToken { Value = 7 },
-            new KataToken(TokenType.BillionWord),
-            new DigitKataToken { Value = 6 },
-            new KataToken(TokenType.HundredWord),
-            new DigitKataToken { Value = 5 },
-            new KataToken(TokenType.TenWord),
-            new DigitKataToken { Value = 4 },
-            new KataToken(TokenType.MillionWord),
-            new DigitKataToken { Value = 3 },
-            new KataToken(TokenType.HundredWord),
-            new DigitKataToken { Value = 2 },
-            new KataToken(TokenType.TenWord),
-            new DigitKataToken { Value = 1 },
-            new KataToken(TokenType.ThousandWord),
+            new DigitKataToken(0),
+            new KataToken(TokenType.Currency, "$"),
             new KataToken(TokenType.Separator),
-            new DigitKataToken { Value = 9 },
-            new KataToken(TokenType.HundredWord),
-            new DigitKataToken { Value = 8 },
+            new DigitKataToken(5),
             new KataToken(TokenType.TenWord),
-            new DigitKataToken { Value = 7 },
-            new KataToken(TokenType.Currency)
-        };
-        // Hundred words implicit & number with cents
-        yield return new List<KataToken> {
-            new DigitKataToken { Value = 9 },
-            new DigitKataToken { Value = 8 },
-            new KataToken(TokenType.TenWord),
-            new DigitKataToken { Value = 7 },
-            new KataToken(TokenType.Currency),
-            new KataToken(TokenType.Separator),
-            new DigitKataToken { Value = 5 },
-            new DigitKataToken { Value = 4 },
+            new DigitKataToken(4),
             new KataToken(TokenType.CentsWord)
         };
         yield return new List<KataToken> {
-            new DigitKataToken { Value = 7 },
+            new DigitKataToken(7),
+            new KataToken(TokenType.Currency, "$"),
             new KataToken(TokenType.Separator),
-            new DigitKataToken { Value = 5 },
-            new DigitKataToken { Value = 4 },
+            new DigitKataToken(5),
+            new KataToken(TokenType.TenWord),
+            new DigitKataToken(4),
+            new KataToken(TokenType.CentsWord)
+        };
+        // Big word
+        yield return new List<KataToken> {
+            new DigitKataToken(9),
+            new KataToken(TokenType.HundredWord),
+            new DigitKataToken(8),
+            new KataToken(TokenType.TenWord),
+            new DigitKataToken(7),
+            new KataToken(TokenType.BillionWord),
+            new DigitKataToken(6),
+            new KataToken(TokenType.HundredWord),
+            new DigitKataToken(5),
+            new KataToken(TokenType.TenWord),
+            new DigitKataToken(4),
+            new KataToken(TokenType.MillionWord),
+            new DigitKataToken(3),
+            new KataToken(TokenType.HundredWord),
+            new DigitKataToken(2),
+            new KataToken(TokenType.TenWord),
+            new DigitKataToken(1),
+            new KataToken(TokenType.ThousandWord),
+            new KataToken(TokenType.Separator),
+            new DigitKataToken(9),
+            new KataToken(TokenType.HundredWord),
+            new DigitKataToken(8),
+            new KataToken(TokenType.TenWord),
+            new DigitKataToken(7),
+            new KataToken(TokenType.Currency, "$")
+        };
+        // Number with cents
+        yield return new List<KataToken> {
+            new DigitKataToken(9),
+            new KataToken(TokenType.HundredWord),
+            new DigitKataToken(8),
+            new KataToken(TokenType.TenWord),
+            new DigitKataToken(7),
+            new KataToken(TokenType.Currency, "$"),
+            new KataToken(TokenType.Separator),
+            new DigitKataToken(5),
+            new KataToken(TokenType.TenWord),
+            new DigitKataToken(4),
             new KataToken(TokenType.CentsWord)
         };
     }

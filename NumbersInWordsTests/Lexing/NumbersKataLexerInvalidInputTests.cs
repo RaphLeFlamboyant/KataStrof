@@ -23,7 +23,7 @@ public class NumbersKataLexerInvalidInputTests
     [Test]
     public void NumbersKataLexer_InvalidSeparatorsTest()
     {
-        var invalidSeparators = ";?:/!§ù%*µ$£¤^¨&\"#{([-|_\\)]}=+";
+        var invalidSeparators = ";?:/!§ù%*µ£¤^¨&\"#{([-|_\\)]}=+";
         var lexer = new NumbersKataLexer();
         
         foreach (var separator in invalidSeparators)

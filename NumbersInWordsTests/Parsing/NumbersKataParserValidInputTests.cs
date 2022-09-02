@@ -9,59 +9,62 @@ public class NumbersKataParserValidInputTests
     private static IEnumerable GenerateValidInputTestCases()
     {
         yield return new List<KataToken>();
-        yield return new List<KataToken> { new DigitKataToken { Value = 5 } };
         yield return new List<KataToken> {
-            new DigitKataToken { Value = 9 },
-            new DigitKataToken { Value = 8 },
-            new DigitKataToken { Value = 7 },
-            new DigitKataToken { Value = 6 },
-            new DigitKataToken { Value = 5 },
-            new DigitKataToken { Value = 4 },
-            new DigitKataToken { Value = 3 },
-            new DigitKataToken { Value = 2 },
-            new DigitKataToken { Value = 1 },
-            new DigitKataToken { Value = 9 },
-            new DigitKataToken { Value = 8 },
-            new DigitKataToken { Value = 7 }
+            new DigitKataToken(9),
+            new DigitKataToken(8),
+            new DigitKataToken(7),
+            new DigitKataToken(6),
+            new DigitKataToken(5),
+            new DigitKataToken(4),
+            new DigitKataToken(3),
+            new DigitKataToken(2),
+            new DigitKataToken(1),
+            new DigitKataToken(9),
+            new DigitKataToken(8),
+            new DigitKataToken(7),
+            new KataToken(TokenType.Currency, "$")
         };
         yield return new List<KataToken> {
-            new DigitKataToken { Value = 9 },
-            new DigitKataToken { Value = 8 },
-            new DigitKataToken { Value = 7 },
+            new DigitKataToken(9),
+            new DigitKataToken(8),
+            new DigitKataToken(7),
             new KataToken(TokenType.Separator),
-            new DigitKataToken { Value = 5 },
-            new DigitKataToken { Value = 4 },
-            new KataToken(TokenType.Currency)
+            new DigitKataToken(5),
+            new DigitKataToken(4),
+            new KataToken(TokenType.Currency, "$")
         };
         yield return new List<KataToken> {
+            new DigitKataToken(0),
             new KataToken(TokenType.Separator),
-            new DigitKataToken { Value = 5 },
-            new DigitKataToken { Value = 4 },
-            new KataToken(TokenType.Currency)
+            new DigitKataToken(5),
+            new DigitKataToken(4),
+            new KataToken(TokenType.Currency, "$")
         };
         yield return new List<KataToken> {
+            new DigitKataToken(0),
             new KataToken(TokenType.Separator),
-            new DigitKataToken { Value = 5 }
+            new DigitKataToken(5),
+            new KataToken(TokenType.Currency, "$")
         };
         yield return new List<KataToken> {
-            new DigitKataToken { Value = 5 },
-            new DigitKataToken { Value = 6 },
-            new DigitKataToken { Value = 1 },
+            new DigitKataToken(5),
+            new DigitKataToken(6),
+            new DigitKataToken(1),
             new KataToken(TokenType.Separator),
-            new DigitKataToken { Value = 4 },
-            new DigitKataToken { Value = 5 },
-            new DigitKataToken { Value = 6 },
+            new DigitKataToken(4),
+            new DigitKataToken(5),
+            new DigitKataToken(6),
             new KataToken(TokenType.Separator),
-            new DigitKataToken { Value = 4 },
-            new DigitKataToken { Value = 5 },
-            new KataToken(TokenType.Currency)
+            new DigitKataToken(4),
+            new DigitKataToken(5),
+            new KataToken(TokenType.Currency, "$")
         };
         yield return new List<KataToken> {
-            new DigitKataToken { Value = 1 },
-            new DigitKataToken { Value = 4 },
-            new DigitKataToken { Value = 5 },
-            new DigitKataToken { Value = 7 },
-            new KataToken(TokenType.Currency)
+            new DigitKataToken(1),
+            new DigitKataToken(4),
+            new DigitKataToken(5),
+            new DigitKataToken(7),
+            new KataToken(TokenType.Currency, "$")
         };
     }
 
