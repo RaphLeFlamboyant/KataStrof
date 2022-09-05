@@ -59,5 +59,374 @@ namespace NumbersInWords.Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to and.
+        /// </summary>
+        internal static string AndWord {
+            get {
+                return ResourceManager.GetString("AndWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to billion.
+        /// </summary>
+        internal static string BillionWord {
+            get {
+                return ResourceManager.GetString("BillionWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to cents|cent.
+        /// </summary>
+        internal static string CentWords {
+            get {
+                return ResourceManager.GetString("CentWords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to €|$.
+        /// </summary>
+        internal static string CurrencySymbols {
+            get {
+                return ResourceManager.GetString("CurrencySymbols", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to dollar|dollars|euro|euros.
+        /// </summary>
+        internal static string CurrencyWords {
+            get {
+                return ResourceManager.GetString("CurrencyWords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to dollars.
+        /// </summary>
+        internal static string DollarsWord {
+            get {
+                return ResourceManager.GetString("DollarsWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to eighteen.
+        /// </summary>
+        internal static string EighteenWord {
+            get {
+                return ResourceManager.GetString("EighteenWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to eight.
+        /// </summary>
+        internal static string EightWord {
+            get {
+                return ResourceManager.GetString("EightWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to eighty.
+        /// </summary>
+        internal static string EightyWord {
+            get {
+                return ResourceManager.GetString("EightyWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to eleven.
+        /// </summary>
+        internal static string ElevenWord {
+            get {
+                return ResourceManager.GetString("ElevenWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to euros.
+        /// </summary>
+        internal static string EurosWord {
+            get {
+                return ResourceManager.GetString("EurosWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to fifteen.
+        /// </summary>
+        internal static string FifteenWord {
+            get {
+                return ResourceManager.GetString("FifteenWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to fifty.
+        /// </summary>
+        internal static string FiftyWord {
+            get {
+                return ResourceManager.GetString("FiftyWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to five.
+        /// </summary>
+        internal static string FiveWord {
+            get {
+                return ResourceManager.GetString("FiveWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to fourteen|forteen.
+        /// </summary>
+        internal static string FourteenWord {
+            get {
+                return ResourceManager.GetString("FourteenWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to fourty|forty.
+        /// </summary>
+        internal static string FourtyWord {
+            get {
+                return ResourceManager.GetString("FourtyWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to four.
+        /// </summary>
+        internal static string FourWord {
+            get {
+                return ResourceManager.GetString("FourWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hundred.
+        /// </summary>
+        internal static string HundredWord {
+            get {
+                return ResourceManager.GetString("HundredWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to million.
+        /// </summary>
+        internal static string MillionWord {
+            get {
+                return ResourceManager.GetString("MillionWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to nineteen.
+        /// </summary>
+        internal static string NineteenWord {
+            get {
+                return ResourceManager.GetString("NineteenWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ninety.
+        /// </summary>
+        internal static string NinetyWord {
+            get {
+                return ResourceManager.GetString("NinetyWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to nine.
+        /// </summary>
+        internal static string NineWord {
+            get {
+                return ResourceManager.GetString("NineWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to one.
+        /// </summary>
+        internal static string OneWord {
+            get {
+                return ResourceManager.GetString("OneWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ,|..
+        /// </summary>
+        internal static string SeparatorSymbols {
+            get {
+                return ResourceManager.GetString("SeparatorSymbols", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to and|,|&amp;|.|;.
+        /// </summary>
+        internal static string SeparatorWords {
+            get {
+                return ResourceManager.GetString("SeparatorWords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to seventeen.
+        /// </summary>
+        internal static string SeventeenWord {
+            get {
+                return ResourceManager.GetString("SeventeenWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to seventy.
+        /// </summary>
+        internal static string SeventyWord {
+            get {
+                return ResourceManager.GetString("SeventyWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to seven.
+        /// </summary>
+        internal static string SevenWord {
+            get {
+                return ResourceManager.GetString("SevenWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sixteen.
+        /// </summary>
+        internal static string SixteenWord {
+            get {
+                return ResourceManager.GetString("SixteenWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sixty.
+        /// </summary>
+        internal static string SixtyWord {
+            get {
+                return ResourceManager.GetString("SixtyWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to six.
+        /// </summary>
+        internal static string SixWord {
+            get {
+                return ResourceManager.GetString("SixWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ten.
+        /// </summary>
+        internal static string TenWord {
+            get {
+                return ResourceManager.GetString("TenWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [NoneInThisLanguage].
+        /// </summary>
+        internal static string TenWordWord {
+            get {
+                return ResourceManager.GetString("TenWordWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to thirteen.
+        /// </summary>
+        internal static string ThirteenWord {
+            get {
+                return ResourceManager.GetString("ThirteenWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to thirty.
+        /// </summary>
+        internal static string ThirtyWord {
+            get {
+                return ResourceManager.GetString("ThirtyWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to thousand.
+        /// </summary>
+        internal static string ThousandWord {
+            get {
+                return ResourceManager.GetString("ThousandWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to three.
+        /// </summary>
+        internal static string ThreeWord {
+            get {
+                return ResourceManager.GetString("ThreeWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to twelve.
+        /// </summary>
+        internal static string TwelveWord {
+            get {
+                return ResourceManager.GetString("TwelveWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to twenty.
+        /// </summary>
+        internal static string TwentyWord {
+            get {
+                return ResourceManager.GetString("TwentyWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to two.
+        /// </summary>
+        internal static string TwoWord {
+            get {
+                return ResourceManager.GetString("TwoWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to zero.
+        /// </summary>
+        internal static string ZeroWord {
+            get {
+                return ResourceManager.GetString("ZeroWord", resourceCulture);
+            }
+        }
     }
 }

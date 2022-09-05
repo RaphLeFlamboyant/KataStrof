@@ -18,4 +18,127 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
+    <data name="FourWord" xml:space="preserve">
+        <value>four</value>
+    </data>
+    <data name="OneWord" xml:space="preserve">
+        <value>one</value>
+    </data>
+    <data name="TwoWord" xml:space="preserve">
+        <value>two</value>
+    </data>
+    <data name="ThreeWord" xml:space="preserve">
+        <value>three</value>
+    </data>
+    <data name="FiveWord" xml:space="preserve">
+        <value>five</value>
+    </data>
+    <data name="SixWord" xml:space="preserve">
+        <value>six</value>
+    </data>
+    <data name="SevenWord" xml:space="preserve">
+        <value>seven</value>
+    </data>
+    <data name="EightWord" xml:space="preserve">
+        <value>eight</value>
+    </data>
+    <data name="NineWord" xml:space="preserve">
+        <value>nine</value>
+    </data>
+    <data name="TenWord" xml:space="preserve">
+        <value>ten</value>
+    </data>
+    <data name="ElevenWord" xml:space="preserve">
+        <value>eleven</value>
+    </data>
+    <data name="TwelveWord" xml:space="preserve">
+        <value>twelve</value>
+    </data>
+    <data name="ThirteenWord" xml:space="preserve">
+        <value>thirteen</value>
+    </data>
+    <data name="FourteenWord" xml:space="preserve">
+        <value>fourteen|forteen</value>
+    </data>
+    <data name="FifteenWord" xml:space="preserve">
+        <value>fifteen</value>
+    </data>
+    <data name="SixteenWord" xml:space="preserve">
+        <value>sixteen</value>
+    </data>
+    <data name="TenWordWord" xml:space="preserve">
+        <value>[NoneInThisLanguage]</value>
+    </data>
+    <data name="SeventeenWord" xml:space="preserve">
+        <value>seventeen</value>
+    </data>
+    <data name="EighteenWord" xml:space="preserve">
+        <value>eighteen</value>
+    </data>
+    <data name="NineteenWord" xml:space="preserve">
+        <value>nineteen</value>
+    </data>
+    <data name="TwentyWord" xml:space="preserve">
+        <value>twenty</value>
+    </data>
+    <data name="ThirtyWord" xml:space="preserve">
+        <value>thirty</value>
+    </data>
+    <data name="FourtyWord" xml:space="preserve">
+        <value>fourty|forty</value>
+    </data>
+    <data name="FiftyWord" xml:space="preserve">
+        <value>fifty</value>
+    </data>
+    <data name="SixtyWord" xml:space="preserve">
+        <value>sixty</value>
+    </data>
+    <data name="SeventyWord" xml:space="preserve">
+        <value>seventy</value>
+    </data>
+    <data name="EightyWord" xml:space="preserve">
+        <value>eighty</value>
+    </data>
+    <data name="NinetyWord" xml:space="preserve">
+        <value>ninety</value>
+    </data>
+    <data name="HundredWord" xml:space="preserve">
+        <value>hundred</value>
+    </data>
+    <data name="ThousandWord" xml:space="preserve">
+        <value>thousand</value>
+    </data>
+    <data name="MillionWord" xml:space="preserve">
+        <value>million</value>
+    </data>
+    <data name="BillionWord" xml:space="preserve">
+        <value>billion</value>
+    </data>
+    <data name="CurrencyWords" xml:space="preserve">
+        <value>dollar|dollars|euro|euros</value>
+    </data>
+    <data name="CentWords" xml:space="preserve">
+        <value>cents|cent</value>
+    </data>
+    <data name="SeparatorWords" xml:space="preserve">
+        <value>and|,|&amp;|.|;</value>
+    </data>
+    <data name="AndWord" xml:space="preserve">
+        <value>and</value>
+    </data>
+    <data name="DollarsWord" xml:space="preserve">
+        <value>dollars</value>
+    </data>
+    <data name="EurosWord" xml:space="preserve">
+        <value>euros</value>
+    </data>
+    <data name="ZeroWord" xml:space="preserve">
+        <value>zero</value>
+    </data>
+    <data name="CurrencySymbols" xml:space="preserve">
+        <value>€|$</value>
+    </data>
+    <data name="SeparatorSymbols" xml:space="preserve">
+        <value>,|.</value>
+    </data>
 </root>
