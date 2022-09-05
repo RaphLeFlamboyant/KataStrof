@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbersInWords", "NumbersIn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbersInWordsTests", "NumbersInWordsTests\NumbersInWordsTests.csproj", "{ABFD510E-521A-4119-8CE4-4C77517CBAF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataStrofLauncher", "KataStrofLauncher\KataStrofLauncher.csproj", "{D2B2FEBF-932A-43D2-936D-338EBD1D0A04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{ABFD510E-521A-4119-8CE4-4C77517CBAF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABFD510E-521A-4119-8CE4-4C77517CBAF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABFD510E-521A-4119-8CE4-4C77517CBAF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B2FEBF-932A-43D2-936D-338EBD1D0A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B2FEBF-932A-43D2-936D-338EBD1D0A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B2FEBF-932A-43D2-936D-338EBD1D0A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B2FEBF-932A-43D2-936D-338EBD1D0A04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
