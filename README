@@ -1,0 +1,11 @@
+Currently implemented :
+Check translation numbers -> words
+Check translation words -> numbers
+
+Upgrades to do
+Launcher : make it not that crappy
+NumbersInWords :
+- Parser rules : Make a system of pattern validation/exclusion so the code can be more generic
+- Localization upgrade : add localization in resources and modulate parsers so it can be localization dependant
+- Lexer : Make localized data-oriented word to tokens translation instead static dictionary in the code
+- Interpreter : Make it generic and localized too
